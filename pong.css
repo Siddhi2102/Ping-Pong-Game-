@@ -14,6 +14,7 @@
 body{
     margin: 0;
     background-color:var(--background-color);
+    overflow: hidden;
 }
 
 .paddle{
@@ -34,17 +35,17 @@ body{
     right:1vw;
 }
 
-
 .ball{
     --x:50;
     --y:50;
     
     position: absolute;
     background-color:var(--foreground-color);
-    top:calc(var(--y)*1vh);
     left:calc(var(--x)*1vw);
-    transform: translateY(-50%);
+    top:calc(var(--y)*1vh);
     border-radius: 50%;
+    transform: translate(-50%,-50%);
+
     width: 2.5vh;
     height: 2.5vh;
 
